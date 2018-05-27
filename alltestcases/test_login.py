@@ -174,7 +174,7 @@ import csv
 
 def get_data_csv(filename):
     users = []
-    with open(filename,'r') as f:
+    with open(filename,'r', encoding='UTF-8') as f:
         rows = csv.reader(f)
         next(rows)
         for row in rows:
